@@ -1,0 +1,217 @@
+@font-face {
+    font-family: cdBold;
+    src:url("../src/CaviarDreams_Bold.ttf");
+}
+@font-face {
+    font-family: cd;
+    src:url("../src/CaviarDreams.ttf");
+}
+body {
+    margin: 0;
+    background-color: rgb(90, 90, 90);
+    color: rgb(248, 255, 156);
+    font-family: cd;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;   
+    background-color: rgb(26, 26, 26);
+    height: 10vh;
+    width: 100%;
+    font-family: cdBold;
+    border-bottom: solid 2px white;
+    z-index: 2;
+}
+a {
+    color: rgb(248, 255, 156);
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 10%;
+    font-size: 2.5em;
+}
+.links {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    height: 100%;
+}
+.hover {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.hover:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+article {
+    height: 80vh;
+    /* color on every other */
+}
+.artContain {
+    border-top: solid 2px rgb(255, 255, 255);
+    border-bottom: solid 2px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.information {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.profile {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+.profileText {
+    width: 60%;
+    font-size: 1.5em;
+}
+.contact {
+    border-top: solid 2px rgb(255, 255, 255);
+    height: 30vh;
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact a {
+    color: rgb(248, 255, 156);
+    text-decoration: none;
+}
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+.projContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rowProj {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.projectCard {
+    width: 33vw;
+    height: 100%;
+    background-color: aqua;
+    position: relative;
+}
+.projectCard img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cardHover {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+}
+.cardHover:hover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cardHover p {
+    text-align: center;
+}
+.bg {
+    background-image: url(../src/img/yellow.png);
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+}
+.bodyContainer {
+    position: relative;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+.bodyContainer article {
+    width: 80vw;
+    height: 140vh;
+    background-color: rgb(51, 51, 51);
+    border: solid 3px white;
+    display: flex;
+    flex-direction: column;
+}
+.projHead {
+    display: flex;
+    flex-direction: row;
+}
+.projInfo {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.projImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+}
+.projImg img {
+    width: 100%;
+    height: 33%;
+    object-fit: cover;
+}
+.projText {
+    margin-left: 3%;
+    width: 47%;
+}
+.projText h1 {
+    font-size: 3em;
+}
+.contactLinks div {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    align-items: center;
+    height: 5vh;
+}
