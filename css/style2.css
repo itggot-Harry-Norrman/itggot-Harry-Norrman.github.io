@@ -218,6 +218,28 @@ hr {
 .contact_pill hr{
     width: 90%;
 }
+.play_btn a{
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(175, 175, 175);
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border-style: solid;
+    border-color: rgb(175, 175, 175);
+    border-width: 2px;
+    border-radius: 5px;
+    width: 4.5vw;
+    height: 2.25vw;
+}
+.play_btn a:hover {
+    
+    color: white;
+    background-color: rgb(41, 41, 41);
+}
 @media (max-width: 480px) {
     nav {
         width: 90vw;
