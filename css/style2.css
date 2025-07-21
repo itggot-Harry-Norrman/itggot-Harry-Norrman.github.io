@@ -218,7 +218,7 @@ hr {
 .contact_pill hr{
     width: 90%;
 }
-.play_btn a{
+.play_btn button{
     transition: 0.2s;
     display: flex;
     flex-direction: column;
@@ -227,6 +227,7 @@ hr {
     background-color: rgb(175, 175, 175);
     text-decoration: none;
     font-weight: bold;
+    font-family: cd;
     color: black;
     border-style: solid;
     border-color: rgb(175, 175, 175);
@@ -235,7 +236,7 @@ hr {
     width: 4.5vw;
     height: 2.25vw;
 }
-.play_btn a:hover {
+.play_btn button:hover {
     
     color: white;
     background-color: rgb(41, 41, 41);
