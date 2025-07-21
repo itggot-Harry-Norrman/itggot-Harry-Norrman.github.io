@@ -108,19 +108,20 @@
         <div class="boxes">
             <h1>Projects</h1>
             <hr>
-            <div class="game_window">
+            <div class="game_window" id="astro-container">
                 <div class="project_container">
                     <div class="project_img"><img src="src\img\projects\Astrograde.png" alt=""></div>
                     <div class="project_text">
                         <h1>Astrograde</h1>
                         <p>A Asteroid like game with moddable upgrades and near infinite oppurtuninites on upgrades</p>
                         <div class="play_btn">
-                            <a href="build\web\MeteorDodge.html">Play</a>
+                            <!-- <a href="build\web\MeteorDodge.html">Play</a> -->
+                             <button onclick="addAstro()">Play</button>
                         </div>
                         
                     </div>
                 </div>
-                <iframe class="iframe_game" src="build\web\MeteorDodge.html" frameborder="0"></iframe>
+                <!-- <iframe class="iframe_game" src="build\web\MeteorDodge.html" frameborder="0"></iframe> -->
             </div>
             <hr>
             <div class="project_container">
@@ -165,6 +166,17 @@
             </div>
         </div>
     </article>
+    <script>
+        function addAstro(){
+            const astro = document.createElement("iframe")
+            astro.src = 'build/web/MeteorDodge.html'
+            astro.classList.add("iframe_game")
+            astro.onload = () => {
+                astro.classList.add('visible');
+            }
+            document.getElementById('astro-container').appendChild(astro);
+        }
+    </script>
 </body>
 
 </html>
