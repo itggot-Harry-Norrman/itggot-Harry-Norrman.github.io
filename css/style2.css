@@ -139,6 +139,38 @@ article {
 .tech_svg {
     width: 75px;
     height: 75px;
+    margin: 4px;
+    /* background-color: aqua; */
+}
+.cv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.0);
+    border-style: solid;
+    margin: 5px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgba(29, 29, 29, 0.24);
+    /* background: rgb(191,102,0);
+    background: linear-gradient(90deg, rgba(191,102,0,0.6250700963979341) 0%, rgba(147,86,86,0.1964986678265056) 100%);  */
+    transition: 0.25s;
+    cursor: pointer;
+}
+.cv:hover {
+    background-color: rgba(126, 126, 126, 0.24);
+    transition: 0.25s;
+}
+.cv_icon {
+    width: 75px;
+    height: 75px;
+    margin: 4px;
+    /* background-color: aqua; */
+}
+.cv_svg {
+    width: 75px;
+    height: 75px;
 }
 .svg_white {
     filter: invert(1);
@@ -283,6 +315,28 @@ hr {
     }
     .tech {
         width: 90vw;
+    }
+    .cv {
+        width: 90vw;
+    }
+    .cv h4 {
+        font-size: 2em;
+    }
+    .cv_icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cv_svg {
+        width: 75vw;
+        height: 30px;
+        margin: 4px;
+        /* background-color: aqua; */
+    }
+    .play_btn button{
+        transition: 0.2s;
+        width: 100px;
+        height: 50px;
     }
     .project_container{
         flex-direction: column;
